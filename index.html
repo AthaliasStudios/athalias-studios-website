@@ -122,6 +122,27 @@
     outline-offset: 3px;
   }
 
+  .inline-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+  }
+  .inline-link:hover strong,
+  .inline-link:focus-visible strong {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-2);
+    text-underline-offset: 3px;
+  }
+  .inline-link-icon {
+    width: 0.72em;
+    height: 0.72em;
+    margin-right: 0.22em;
+    vertical-align: baseline;
+    position: relative;
+    top: 0.06em;
+    color: var(--accent-2);
+  }
+
   .wrap {
     max-width: 1120px;
     margin: 0 auto;
@@ -907,7 +928,7 @@
     <div class="about-copy">
       <p class="eyebrow">The network</p>
       <h2 style="font-size:clamp(28px,4vw,40px); margin:14px 0 22px;">Built from a<br>collective, not a roster.</h2>
-      <p>Most studios sign an artist and build a sound around them. Athalias runs the other direction: artists connected through the <strong>MusicCollabNetwork</strong> community bring their own voice in, and the track gets built at the point where those voices meet.</p>
+      <p>Most studios sign an artist and build a sound around them. Athalias runs the other direction: artists connected through the <a class="inline-link" href="https://www.reddit.com/r/MusicCollabNetwork/" target="_blank" rel="noopener"><svg class="inline-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M10 14a3.5 3.5 0 0 0 5 0l3-3a3.5 3.5 0 0 0-5-5l-1.5 1.5"></path><path d="M14 10a3.5 3.5 0 0 0-5 0l-3 3a3.5 3.5 0 0 0 5 5l1.5-1.5"></path></svg><strong>MusicCollabNetwork</strong></a> and <a class="inline-link" href="https://www.youtube.com/@SkateTribune" target="_blank" rel="noopener"><svg class="inline-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M10 14a3.5 3.5 0 0 0 5 0l3-3a3.5 3.5 0 0 0-5-5l-1.5 1.5"></path><path d="M14 10a3.5 3.5 0 0 0-5 0l-3 3a3.5 3.5 0 0 0 5 5l1.5-1.5"></path></svg><strong>SkateTribune</strong></a> communities bring their own voice in, and the track gets built at the point where those voices meet.</p>
       <p>Hip-hop is the loudest thread, but it isn't the only one. The catalog runs from experimental rap and cloud-leaning production into indie dream pop, and the sound keeps shifting because the people and projects keep changing: a MusicCollabNetwork session one week, a personal dream-pop record the next.</p>
       <p>Deadboi.Walking produces most of the beats himself in Logic and FL Studio, plays piano and guitar on top of them, and also builds custom instrumentals for outside brands. Alongside his own catalog, he handles placements, distribution and marketing for hundreds of other rappers and producers across the network, all free of charge.</p>
       <p>Deadboi.Walking also runs <strong>SkateTribune</strong>, where all of it (Athalias, ClitLitter, MusicCollabNetwork) actually gets used: skateboarders, fingerboarders and gamers cut it against their own footage, and the community cuts skate clips back into the music. It's one connected loop, not two separate worlds, and the monthly edit challenge below runs on exactly that loop.</p>
@@ -1143,28 +1164,18 @@
   ];
   var singles = [
     { title: "Pipeline", year: 2026, href: "https://open.spotify.com/album/7aauGoJtyIPd5KSvcAiyDa" },
-    { title: "Like A Dream", year: 2026, href: "https://open.spotify.com/album/07HGUo4C2Ati9hFVPN6u4y" },
     { title: "More Expensive Than Cocaine", year: 2026, href: "https://open.spotify.com/album/0Att8SMGD33Cy6oUSBvTFT" },
-    { title: "Save Yourself", year: 2026, href: "https://open.spotify.com/album/0B5UHcdAOAg3PRumkLDKkF" },
     { title: "In A State", year: 2026, href: "https://open.spotify.com/album/64ogVYnp70bEfyMfdBA8CZ" },
     { title: "Runnin", year: 2026, href: "https://open.spotify.com/album/38AxUmn6PStsgKLUYkF1vD" },
     { title: "Pressure Crack", year: 2026, href: "https://open.spotify.com/album/4bARUZ590FIExi5h0xycq5" },
     { title: "Wood", year: 2026, href: "https://open.spotify.com/album/1c51FBvMIrrIPtoZoFn4EL" },
     { title: "9SIXD", year: 2026, href: "https://open.spotify.com/album/6XcPoVpdIKEc7wnpkKBcuF" },
     { title: "CURSED", year: 2026, href: "https://open.spotify.com/album/2LRJbdbGtEby63PYyJOXnZ" },
-    { title: "Just Like Applause", year: 2025, href: "https://open.spotify.com/album/0IjKrQu9CloyR6JAsLD4L8" },
     { title: "X ZODIC MISFITS", year: 2025, href: "https://open.spotify.com/album/0JAju8fVocWJ5B36zvNZoh" },
     { title: "Leave It at That", year: 2025, href: "https://open.spotify.com/album/0K4g4jDMsuvJj2qW0nIxjr" },
     { title: "Drowning In Designer", year: 2025, href: "https://open.spotify.com/album/0P4SdjBSq6FQPisqVASrSf" },
-    { title: "Rugrat Freestyle", year: 2025, href: "https://open.spotify.com/album/0Qx5MzYSsM9Kzh5zvhs16p" },
     { title: "BBGMP57", year: 2025, href: "https://open.spotify.com/album/3HTjnGcDM9zFhxAe1A8lee" },
-    { title: "On The Move", year: 2025, href: "https://open.spotify.com/album/71Tf9gUi0AxHa2raxVZufN" },
-    { title: "1994", year: 2025, href: "https://open.spotify.com/album/4dHQligeUGccI1HON3CSGZ" },
-    { title: "Empty Pockets", year: 2025, href: "https://open.spotify.com/album/3m4oPvWGOVy6cAQ2oABUxr" },
-    { title: "Fallen", year: 2025, href: "https://open.spotify.com/album/27ElReGBa7nV4CGMrzVB9A" },
     { title: "Haters Behind", year: 2025, href: "https://open.spotify.com/album/2aHl2Q1IgAcGp2zUO6nQYC" },
-    { title: "Young Carter", year: 2025, href: "https://open.spotify.com/album/5oqGYxTCBAqGn8eLAzxFdA" },
-    { title: "Dirty And Mean", year: 2025, href: "https://open.spotify.com/album/2zxay5OensNqQ7QrzXJ4ZT" },
     { title: "Him", year: 2025, href: "https://open.spotify.com/album/3MF5F4jxuuQq5JN0fwc0IA" }
   ];
   var tracks = [
