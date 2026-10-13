@@ -616,62 +616,6 @@
   }
   .track-row:hover .track-play { border-color: var(--accent); color: var(--accent); }
 
-  /* ============ CONTEST ============ */
-  .contest-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 56px;
-  }
-  @media (max-width: 860px) { .contest-grid { grid-template-columns: 1fr; } }
-  .contest-intro p {
-    font-size: 16px;
-    color: var(--ink-dim);
-    max-width: 52ch;
-    margin: 14px 0 18px;
-  }
-  .contest-intro .btn { margin-top: 6px; }
-  .contest-steps {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid var(--line);
-  }
-  .step {
-    display: grid;
-    grid-template-columns: 52px 1fr;
-    gap: 16px;
-    padding: 22px 0;
-    border-bottom: 1px solid var(--line);
-  }
-  .step .stepnum {
-    font-size: 22px;
-    color: var(--accent);
-  }
-  .step h4 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: none;
-    letter-spacing: 0;
-    color: var(--ink);
-    margin: 0 0 4px;
-  }
-  .step p {
-    margin: 0;
-    font-size: 14px;
-    color: var(--ink-dim);
-  }
-  .step p a {
-    color: var(--ink);
-    text-decoration: none;
-    border-bottom: 1px solid var(--line-strong);
-  }
-  .step p a:hover { color: var(--accent); border-color: var(--accent); }
-  .contest-note {
-    margin: 28px 0 0;
-    font-size: 13px;
-    color: var(--ink-faint);
-    letter-spacing: 0.02em;
-  }
 
   /* ============ CONNECT ============ */
   .connect-grid {
@@ -869,7 +813,6 @@
       <li><a href="#about">About</a></li>
       <li><a href="#discography">Discography</a></li>
       <li><a href="#tracks">Tracks</a></li>
-      <li><a href="#contest">Contest</a></li>
       <li><a href="#skatetribune">SkateTribune</a></li>
       <li><a href="#connect">Connect</a></li>
       <li><a href="#family">Family</a></li>
@@ -886,7 +829,6 @@
     <a href="#about">About</a>
     <a href="#discography">Discography</a>
     <a href="#tracks">Tracks</a>
-    <a href="#contest">Contest</a>
     <a href="#skatetribune">SkateTribune</a>
     <a href="#connect">Connect</a>
     <a href="#family">Family</a>
@@ -967,47 +909,6 @@
       <p class="note">The five sides listeners keep coming back to, across the network. Tap any track to hear it.</p>
     </div>
     <div class="tracklist" id="track-list"></div>
-  </div>
-</section>
-
-<section class="block" id="contest">
-  <div class="wrap">
-    <div class="block-head">
-      <h2>Monthly edit challenge</h2>
-      <p class="note">Hosted with SkateTribune and Dan Gogh. Open entry, no following required.</p>
-    </div>
-    <div class="contest-grid">
-      <div class="contest-intro">
-        <p class="eyebrow">Featuring Danny Tate</p>
-        <p><a class="inline-link" href="https://en.wikipedia.org/wiki/Danny_Tate" target="_blank" rel="noopener"><svg class="inline-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M10 14a3.5 3.5 0 0 0 5 0l3-3a3.5 3.5 0 0 0-5-5l-1.5 1.5"></path><path d="M14 10a3.5 3.5 0 0 0-5 0l-3 3a3.5 3.5 0 0 0 5 5l1.5-1.5"></path></svg><strong>Danny Tate</strong></a> is a Grammy-nominated songwriter who's written for Rick Springfield, Lynyrd Skynyrd and Tim McGraw. His "Affair of the Heart" was nominated against Michael Jackson's "Beat It." Each month, one of his tracks becomes the soundtrack for an open call.</p>
-        <p>Cut something to it: skate footage, Skate 4, Skater XL, dance, art, film, whatever you've got. Sixty seconds max. Danny reviews every entry himself and picks one winner a month for a free prize. No big following needed, just something worth watching.</p>
-        <a class="btn btn-ghost" href="https://youtube.com/playlist?list=PLbHInG5KisW0&si=ZDLC9x9bggyQOxKx" target="_blank" rel="noopener">Browse the song list →</a>
-      </div>
-      <div class="contest-steps">
-        <div class="step">
-          <span class="stepnum mono">01</span>
-          <div>
-            <h4>Pick a track</h4>
-            <p>Any song from the Dan Gogh Contests playlist.</p>
-          </div>
-        </div>
-        <div class="step">
-          <span class="stepnum mono">02</span>
-          <div>
-            <h4>Cut a 60-second edit</h4>
-            <p>Any format, any style, just built around that song.</p>
-          </div>
-        </div>
-        <div class="step">
-          <span class="stepnum mono">03</span>
-          <div>
-            <h4>Post it publicly on Instagram</h4>
-            <p>Tag <a href="https://www.instagram.com/skatetribune/" target="_blank" rel="noopener">@skatetribune</a> and <a href="https://www.instagram.com/dangoghbrand/" target="_blank" rel="noopener">@dangoghbrand</a>, and invite them to the post.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="contest-note mono">Every entrant gets added to a group chat where Danny checks out the work directly. One winner picked per month.</p>
   </div>
 </section>
 
@@ -1172,17 +1073,12 @@
       </div>
       <div class="connect-card">
         <h3>Bones Wheels FS</h3>
-        <p>The skate team repping the network, sponsored by Dan Gogh Brand.</p>
+        <p>The skate team repping the network.</p>
         <a class="connect-link" href="https://www.instagram.com/boneswheelsfs/" target="_blank" rel="noopener">Instagram &middot; @boneswheelsfs &rarr;</a>
       </div>
       <div class="connect-card">
-        <h3>Dan Gogh Brand</h3>
-        <p>Sponsors Bones Wheels FS and co-hosts the monthly edit challenge with SkateTribune.</p>
-        <a class="connect-link" href="https://www.instagram.com/dangoghbrand" target="_blank" rel="noopener">Instagram &middot; @dangoghbrand &rarr;</a>
-      </div>
-      <div class="connect-card">
         <h3>Primitive FS</h3>
-        <p>A gaming-flow skate team sponsored by Primitive Skateboards, with real gamers making the edits&rsquo;s contest scene.</p>
+        <p>A gaming-flow skate team sponsored by Primitive Skateboards, with real gamers making the edits.</p>
         <a class="connect-link" href="https://www.instagram.com/primitivefs" target="_blank" rel="noopener">Instagram &middot; @primitivefs &rarr;</a>
       </div>
       <div class="connect-card">
