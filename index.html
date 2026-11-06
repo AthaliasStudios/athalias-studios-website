@@ -652,6 +652,19 @@
     transition: border-color 0.15s ease, color 0.15s ease;
   }
   .connect-link:hover { color: var(--accent); border-color: var(--accent); }
+  .connect-email {
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 10.5px;
+    line-height: 1.6;
+    padding: 8px 12px;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    overflow-wrap: anywhere;
+  }
+  .connect-email:hover { background: color-mix(in srgb, var(--accent) 22%, transparent); }
   .connect-links { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
   .connect-card-feature { grid-column: 1 / -1; }
   .connect-card-feature > p { max-width: 62ch; }
@@ -941,7 +954,7 @@
       <div class="connect-card">
         <h3>Bring a track in</h3>
         <p>Got a verse, a beat, or a rough idea that needs another voice? Reach out directly and it'll get heard.</p>
-        <a class="connect-link" href="mailto:athaliasrecordingstudios@gmail.com">athaliasrecordingstudios@gmail.com →</a>
+        <a class="connect-link connect-email" href="mailto:athaliasrecordingstudios@gmail.com">athaliasrecordingstudios<wbr>@gmail.com →</a>
       </div>
       <div class="connect-card">
         <h3>Join the network</h3>
