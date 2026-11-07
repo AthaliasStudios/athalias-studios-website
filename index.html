@@ -824,7 +824,6 @@
     <a href="#top" class="brand">ATHALIAS<span class="dot">·</span>STUDIOS</a>
     <ul class="nav-links nav-mobile-hide">
       <li><a href="#about">About</a></li>
-      <li><a href="#latest">Latest</a></li>
       <li><a href="#discography">Discography</a></li>
       <li><a href="#tracks">Tracks</a></li>
       <li><a href="#skatetribune">SkateTribune</a></li>
@@ -841,7 +840,6 @@
   </div>
   <div class="mobile-nav" id="mobile-nav" hidden>
     <a href="#about">About</a>
-    <a href="#latest">Latest</a>
     <a href="#discography">Discography</a>
     <a href="#tracks">Tracks</a>
     <a href="#skatetribune">SkateTribune</a>
@@ -898,17 +896,6 @@
       <div class="stat-row"><span class="k">Artist network</span><span class="v" style="font-size:20px;">MusicCollabNetwork</span></div>
       <div class="stat-row"><span class="k">Where it's used</span><span class="v" style="font-size:20px;">SkateTribune</span></div>
     </div>
-  </div>
-</section>
-
-<section class="block" id="latest">
-  <div class="wrap">
-    <div class="block-head">
-      <h2>Latest from Athalias</h2>
-      <p class="note">New solo releases from 2026. Tap any one to hear it.</p>
-    </div>
-    <div class="disc-grid" id="latest-grid"></div>
-    <a class="connect-link" href="https://open.spotify.com/artist/0LtqvDej31L5VkCRP9VimW" target="_blank" rel="noopener">Follow Athalias on Spotify &rarr;</a>
   </div>
 </section>
 
@@ -1210,21 +1197,6 @@
     meta.appendChild(el('p', 'yr mono', 'Album · ' + a.year));
     card.appendChild(meta);
     albumGrid.appendChild(card);
-  });
-
-  var latestGrid = document.getElementById('latest-grid');
-  singles.filter(function (s) { return s.year === 2026; }).forEach(function (s, i) {
-    var hue = 170 + i * 37;
-    var card = linkEl('disc-card', s.href);
-    var art = el('div', 'disc-art');
-    art.style.background = 'linear-gradient(155deg, hsl(' + hue + ' 85% 38%), hsl(' + (hue + 40) + ' 70% 16%))';
-    art.appendChild(el('span', 'catno', 'NEW \u00b7 2026'));
-    card.appendChild(art);
-    var meta = el('div', 'disc-meta');
-    meta.appendChild(el('p', 'title', s.title));
-    meta.appendChild(el('p', 'yr mono', 'Single \u00b7 Athalias'));
-    card.appendChild(meta);
-    latestGrid.appendChild(card);
   });
 
   var singleList = document.getElementById('single-list');
