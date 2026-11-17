@@ -817,7 +817,28 @@
   @media (prefers-reduced-motion: reduce) {
     * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   }
-.live-bar{display:flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px;background:linear-gradient(90deg,var(--accent-3),var(--accent));}.live-bar a{color:var(--accent-ink);text-decoration:none;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:0.02em;display:inline-flex;align-items:center;gap:9px;}.live-bar a:hover{text-decoration:underline;text-underline-offset:3px;}.live-bar .live-dot{width:8px;height:8px;border-radius:50%;background:var(--accent-ink);display:inline-block;animation:pulse 1.6s ease-in-out infinite;flex-shrink:0;}</style>
+.live-bar{display:flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px;background:linear-gradient(90deg,var(--accent-3),var(--accent));}.live-bar a{color:var(--accent-ink);text-decoration:none;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:0.02em;display:inline-flex;align-items:center;gap:9px;}.live-bar a:hover{text-decoration:underline;text-underline-offset:3px;}.live-bar .live-dot{width:8px;height:8px;border-radius:50%;background:var(--accent-ink);display:inline-block;animation:pulse 1.6s ease-in-out infinite;flex-shrink:0;}
+.biz-top{max-width:1100px;margin:0 auto;padding:18px 16px 4px;display:grid;grid-template-columns:1.35fr 1fr;gap:16px}
+.skool-box{position:relative;display:flex;align-items:stretch;overflow:hidden;border-radius:18px;text-decoration:none;color:#fff;background:linear-gradient(120deg,#1B0F2E,#4a1a8a 55%,#B026FF);border:2px solid var(--accent-2);box-shadow:0 6px 28px rgba(176,38,255,.35);transition:transform .2s,box-shadow .2s}
+.skool-box:hover{transform:translateY(-3px);box-shadow:0 10px 34px rgba(41,251,234,.35)}
+.skool-box img{width:38%;object-fit:cover;flex-shrink:0}
+.skool-txt{padding:18px 20px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.skool-tag{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#29FBEA}
+.skool-txt h2{margin:0;font-size:clamp(20px,3vw,28px);line-height:1.15;color:#fff}
+.skool-txt p{margin:0;font-size:14px;line-height:1.45;color:#EBDDFF}
+.skool-mark{font-weight:800;font-size:20px;letter-spacing:-.02em;display:inline-flex;gap:0}
+.skool-mark b:nth-child(1){color:#4F7CFF}.skool-mark b:nth-child(2){color:#FF4F4F}.skool-mark b:nth-child(3){color:#FFC83D}.skool-mark b:nth-child(4){color:#4FD36B}.skool-mark b:nth-child(5){color:#B26BFF}
+.skool-btn{align-self:flex-start;margin-top:4px;background:#29FBEA;color:#1A0512;font-weight:700;font-size:15px;padding:10px 18px;border-radius:999px}
+.shop-box{border-radius:18px;padding:18px 20px;background:var(--bg-raised);border:2px solid var(--accent);display:flex;flex-direction:column;gap:10px}
+.shop-box h2{margin:0;font-size:clamp(20px,3vw,26px);color:var(--ink)}
+.shop-box .shop-sub{margin:0;font-size:14px;color:var(--ink-dim)}
+.shop-links{display:flex;flex-direction:column;gap:9px}
+.shop-links a{display:flex;justify-content:space-between;align-items:center;text-decoration:none;font-weight:700;font-size:16px;padding:11px 16px;border-radius:12px;background:var(--accent);color:var(--accent-ink);transition:transform .15s}
+.shop-links a:nth-child(2){background:var(--accent-3);color:#fff}
+.shop-links a:nth-child(3){background:var(--accent-2);color:#0D0716}
+.shop-links a:hover{transform:translateX(4px)}
+@media(max-width:760px){.biz-top{grid-template-columns:1fr}.skool-box img{width:34%}}
+</style>
 
 <div class="live-bar"><a href="https://www.youtube.com/channel/UCv-oPDGSdlg4eLYiXZLkNBQ/live" target="_blank" rel="noopener"><span class="live-dot"></span>LIVE NOW — Athalias 24/7 Radio: real music + real facts, playing right now →</a></div><nav class="site-nav">
   <div class="wrap">
@@ -849,6 +870,27 @@
     <a href="https://music.apple.com/us/artist/athalias/1842997580" target="_blank" rel="noopener">Listen on Apple Music →</a>
   </div>
 </nav>
+
+<section class="biz-top" aria-label="Join and shop">
+  <a class="skool-box" href="https://www.skool.com/musiccollabnetwork-3459" target="_blank" rel="noopener">
+    <img src="skool-community.jpg" alt="Music Collab Network community" loading="eager">
+    <div class="skool-txt">
+      <span class="skool-tag">Music Collab Network · Community</span>
+      <h2>Join our <span class="skool-mark"><b>s</b><b>k</b><b>o</b><b>o</b><b>l</b></span> community</h2>
+      <p>Learn to grow on social media, use AI, and monetize your music. Everything we do, taught inside.</p>
+      <span class="skool-btn">Join the community →</span>
+    </div>
+  </a>
+  <div class="shop-box">
+    <h2>Shop Athalias Studios</h2>
+    <p class="shop-sub">Clothing and merch. Pick your store:</p>
+    <div class="shop-links">
+      <a href="https://www.depop.com/athaliasstudios/" target="_blank" rel="noopener">Depop <span>→</span></a>
+      <a href="https://www.tiktok.com/@skatetribune" target="_blank" rel="noopener">TikTok Shop <span>→</span></a>
+      <a href="https://www.mercari.com/u/athaliasstudios/" target="_blank" rel="noopener">Mercari <span>→</span></a>
+    </div>
+  </div>
+</section>
 
 <header class="hero" id="top">
   <div class="wrap hero-grid">
